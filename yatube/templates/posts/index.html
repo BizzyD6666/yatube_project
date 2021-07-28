@@ -15,7 +15,7 @@
     </ul>
   <p>{{ post.text }}</p>
   {% if post.group.slug is not Null%}
-    <a href="{% url 'main:group' post.group.slug %}">все записи группы</a>
+    <a href="{% url 'posts:group_list' post.group.slug %}">все записи группы</a>
   {% else %}
     У этого поста нет группы
   {% endif %}
